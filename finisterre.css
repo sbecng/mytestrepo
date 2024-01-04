@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    position: relative;
+    /* width: 100%; */
+}
+header{
+    height: 131vh;
+    /* border: .1rem solid white; */
+    /* border: .1rem solid red; */
+}
+header >video{
+    z-index: -1;
+    position: absolute;
+    width: 99.9%;
+}
+header > nav {
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+nav{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: "logo menu aside";
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: ". . . . . .";
+    justify-content: space-between;
+}
+nav > ul >li{
+    display: grid;
+    gap: .1rem;
+    grid-template-areas: "menu . . . . .";
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+nav > ul >li > a{
+    color: aliceblue;
+    text-decoration: none;
+}
+header > button > a {
+    color: green;
+    text-decoration: none;
+}
+.shop1 {
+    position: sticky;
+    top: 80%;
+    height: 15%;
+    margin-left: 3rem;
+}
+.shop1 > h1,.shop2 > h1  {
+    font-size: 3rem;
+    color: white;
+}
+.shop1 > button {
+    margin-top: 1%;
+    height: 40%;
+    width: 15%;
+    background-color: blanchedalmond;
+}
+button > a {
+    text-decoration: none;
+    color: grey;
+}
+section{
+
+}
+section > .seashop{
+    height: 80vh; 
+    width: 100%;
+}
+section > .seashop > h1 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+section > .seashop > .seashelf {
+    display: grid;
+    grid-template-areas: "men women gifts robes";
+    justify-content: space-between;
+    margin: 1rem;
+}
+section > .bestsellers {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+section > .bestsellers > figure > img {
+    width: 100%;
+    height: 100%;
+}
+.shop2 {
+    position: absolute;
+    top: 83%;
+    height: 15%;
+    margin-left: 3rem;
+}
+.shop2 > button {
+    margin-top: 1%;
+    height: 50%;
+    width: 110%;
+    background-color: blanchedalmond;
+}
+section > .latestgear{
+    width: 98%;
+}
+section >h1 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+section > .latestgear, .gearshelf{
+    display: grid;
+    grid-template-areas: "men women gifts robes";
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 1rem;
+}
+section > .latestgear> .gearshelf> div> figure> figcaption {
+    background-color: blanchedalmond;
+    width: 35%;
+    padding: .5rem;
+}
+section > .latestgear> .gearshelf> div> figure> figcaption> a {
+    text-decoration: none;
+    color: black;
+}
+section > .latestgear> .gearshelf> div> h3 {
+    padding: .5rem;
+}
+section> .deepbelief{
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-style: normal;
+    width: 60%;
+}
+section> .livedandloved{
+    margin-top: 2rem;
+    position: relative;
+}
+section> .livedandloved > .figures{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+section> .livedandloved > .shop3{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    margin-left: 2rem;
+}
+section> .livedandloved > .shop3> div> h2,h3{
+    color: aliceblue;
+    margin: .5rem;
+    width: 70%;
+}
+section> .livedandloved > .shop3> div> a> button{
+    background-color: blanchedalmond;
+    width: 40%;
+    height: 50%;
+}
+section> .whowearesection{
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+section> .whowearesection> div> h2{
+    margin-top: 1rem;
+}
+section> .broadcast{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+section> .broadcast> .ambassadors, .people,.surf{
+    width: 30vw;
+}
+section> .broadcast> div> h3,h2,h1{
+    color: black;
+    margin-left: 0 ;
+    width: 85%;
+}
+section> .broadcast> div> figure{
+    margin-top: 1rem ;
+}
+section> .favouritesesction{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+section> .favouritesesction> div> h3,h2,h1{
+    color: black;
+    margin-left: 0 ;
+    width: 85%;
+}
+section> h1> a{
+    text-decoration: none;
+    color: black;
+}
+section> .instagramlinks{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    margin-top: 4rem;
+    width: 100%;
+    height: 60vh;
+}
+footer> .ribbon{
+   display: flex;
+   justify-content: space-between;
+   width: 99%;
+   height: 80%;
+}
+footer> .ribbon> .newsletter{
+    width: 40%;
+    margin-left: 2rem;
+ }
+ footer> .ribbon> .newsletter> h3{
+    color: black;
+}
+ footer> .ribbon> .newsletter> input{
+    width: 100%;
+    height: 15%;
+    margin-bottom: 2rem;
+ }
+ footer> .ribbon> .newsletter> .actionbuttons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+ }
+ footer> .ribbon> .newsletter> .actionbuttons> .checkboxes{
+    font-size: 1.5rem;
+ }
+ footer> .ribbon> .newsletter> .actionbuttons> .checkboxes> input{
+    height: 20px;
+    width: 20px;
+ }
+ footer> .ribbon> .newsletter> .actionbuttons> button{
+    width: 30%;
+    font-size: 1rem;
+    background-color: blanchedalmond;
+    border: none;
+ } 
+ footer> .ribbon> .links{
+    width: 20%;
+    padding: 1rem;
+}
+footer> .ribbon> .links> li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0 .5rem .5rem .5rem;
+    color: black;
+}
+footer> .ribbon> .socials{
+    width: 20%;
+    padding: 1rem;
+}
+footer> .ribbon> .socials> ul> li{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0 .5rem .5rem .5rem;
+    color: black;
+}
+footer> .ribbon> .socials> ul> li> a{
+    text-decoration: none;
+}
+footer> .ribbon> .socials> .badge{
+    margin-left: 3rem;
+}
+footer> .ribbon> .links> h3> i{
+    color: black;
+}
+footer> .copyright>h3{
+    color: black;
+    margin-left: 2rem;
+}
+footer> .livechat{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+footer> .livechat> .fa-rocketchat{
+    font-size: 3rem;
+    position: sticky;
+}
